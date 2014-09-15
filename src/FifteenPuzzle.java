@@ -47,15 +47,6 @@ public class FifteenPuzzle {
 			System.out.println("Solution doesn't exist");	
 		}
 		/*run IDDFS*/
-		else if(whichSearch == 2){
-			while(game.q.peek() != null){
-				game.left(game.q.peek());
-				game.right(game.q.peek());
-				game.up(game.q.peek());
-				game.down(game.q.remove());
-			}		
-			System.out.println("Solution doesn't exist");
-		}
 	}
 	
 	static void getInitialState(){
